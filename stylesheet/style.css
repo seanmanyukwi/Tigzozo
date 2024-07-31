@@ -177,6 +177,9 @@ body{
 }
 .wrapper{
     padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-area{
     padding: 50px 0;
@@ -185,7 +188,6 @@ body{
     display: flex;
     gap: 15px;
     margin-top: 50px;
-    margin-left: 130px;
 }
 .box{
   
@@ -352,6 +354,8 @@ body{
 }
 .foot{
     background-color:var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .face{
     margin-left: 50px;
@@ -424,13 +428,17 @@ body{
   .show {display:block;}
 
 
-@media (max-width:576px){
+@media (max-width:675px){
+.nav{
+    width: 100%;
+}
+
 
     #home{
         width: 100%;
     }
     .logo{
-        width: 200px;
+        width: 100px;
         height: 75px;    
     }
 
@@ -462,7 +470,7 @@ body{
         margin: 0px;
     }
     .das {
-        margin-left: 25px;
+        margin-left: 0px;
     }
     .lead{
         margin-top: 15px;
@@ -482,8 +490,7 @@ body{
     }
     .buts{
         display: flex;
-        flex-direction: row;
-        gap: 8px;
+        flex-direction: column
     }
     .pix{
         width: 100px;
@@ -509,7 +516,7 @@ body{
     }
 
     .abt{
-        font-size: 30px;
+        font-size: 20px;
         margin: 0px;
         margin-top: 20px;
         margin-left: 5px
@@ -564,14 +571,13 @@ body{
     .box-area{
      display: flex;
      flex-direction: column;
-     margin-left: 100px;
     }
     .img23{
         width: 350px;
     }
       
     .tg{
-        font-size: 24px;
+        font-size: 20px;
     }
     .we{
        display: flex;
@@ -602,7 +608,7 @@ body{
     margin-top: 25px;
   }
   .xet{
-    font-size: 12px;
+    font-size: 15px;
  margin-right: 40px;
   }
   .tem{
@@ -653,10 +659,10 @@ body{
   .whit{
     font-size: 12px;
   }
-  .footer{
+  .foot{
     display:grid;
-    grid-template-columns: 2fr 2fr;
-    margin: 0px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
   }
   .face{
 margin: 0px;
@@ -669,6 +675,10 @@ align-items: center;
     margin-bottom: 0px;
     margin-top: 0px;
   }
+  .net{
+    margin-left: 10px;
+  }
+ 
 
    
   
@@ -684,7 +694,7 @@ align-items: center;
 
 
 
-@media (min-width:577px) and (max-width:1100px){
+@media (min-width:676px) and (max-width:1000px){
     .dropdown{
         display: none;
     }
@@ -798,7 +808,7 @@ align-items: center;
 }
 
 
-@media (min-width:101px){
+@media (min-width:1001px){
 
 .dropdown{
     display: none;
